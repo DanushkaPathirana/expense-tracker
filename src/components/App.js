@@ -1,6 +1,6 @@
 import React from "react"
 
-import ExpenseItem from "./ExpenseItem"
+import Expenses from "./Expenses"
 
 const DUMMY_EXPENSES = [
     { id: "e1", title: "Toilet Paper", amount: 94.12, date: new Date(2020, 7, 14) },
@@ -12,10 +12,7 @@ const DUMMY_EXPENSES = [
 const App = () => {
     return(
         <div>
-            <ExpenseItem id={DUMMY_EXPENSES[0].id} title={DUMMY_EXPENSES[0].title} amount={DUMMY_EXPENSES[0].amount} date={DUMMY_EXPENSES[0].date} />
-            <ExpenseItem id={DUMMY_EXPENSES[1].id} title={DUMMY_EXPENSES[1].title} amount={DUMMY_EXPENSES[1].amount} date={DUMMY_EXPENSES[1].date} />
-            <ExpenseItem id={DUMMY_EXPENSES[2].id} title={DUMMY_EXPENSES[2].title} amount={DUMMY_EXPENSES[2].amount} date={DUMMY_EXPENSES[2].date} />
-            <ExpenseItem id={DUMMY_EXPENSES[3].id} title={DUMMY_EXPENSES[3].title} amount={DUMMY_EXPENSES[3].amount} date={DUMMY_EXPENSES[3].date} />
+            <Expenses items={DUMMY_EXPENSES} />
         </div>
     )
 }
