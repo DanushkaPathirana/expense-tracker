@@ -11,9 +11,13 @@ const DUMMY_EXPENSES = [
 ]
 
 const App = () => {
+    const addExpenseHandler = (expenses) => {
+        console.log(expenses)
+    }
+
     return(
         <div>
-            <NewExpense />
+            <NewExpense onAddExpense={addExpenseHandler} />
             <Expenses items={DUMMY_EXPENSES} />
         </div>
     )
